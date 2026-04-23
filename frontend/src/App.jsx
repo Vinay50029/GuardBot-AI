@@ -11,8 +11,9 @@ function App() {
     if (!url) return;
     setLoading(true);
     try {
-      // Connecting to our Spring Boot Backend
-      const response = await axios.post('http://localhost:8080/api/audit', { repoUrl: url });
+      // Use the Render URL if available, otherwise use localhost
+      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:8080';
+      const response = await axios.post(`${apiUrl}/api/audit`, { repoUrl: url });
       setResult(response.data);
     } catch (error) {
       console.error("Error auditing repo", error);
