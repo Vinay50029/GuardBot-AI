@@ -1,0 +1,29 @@
+# Java
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven
+.mvn/
+mvnw
+mvnw.cmd
+
+# Node.js
+node_modules/
+dist/
+.env
+.env.local
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+backend/src/main/resources/application.properties
