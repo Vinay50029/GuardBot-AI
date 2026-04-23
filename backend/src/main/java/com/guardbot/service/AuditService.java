@@ -17,7 +17,7 @@ public class AuditService {
     @Value("${groq.api.key}")
     private String apiKey;
 
-    @Value("${groq.api.url}")
+    @Value("${groq.api.url:https://api.groq.com/openai/v1/chat/completions}")
     private String apiUrl;
 
     private final RestTemplate restTemplate = new RestTemplate();
