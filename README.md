@@ -1,8 +1,11 @@
-# 🛡️ GuardBot AI - DevSecOps Git Auditor
+# 🛡️ GuardBot AI
 
 GuardBot AI is a professional-grade full-stack application designed to automate the security auditing process for Git repositories. Built with **Spring Boot** and **React**, it leverages **LLM-powered analysis** to identify critical vulnerabilities, ensuring code safety in a modern DevSecOps lifecycle.
 
 ---
+## 📷 Preview
+<img width="1686" height="873" alt="image" src="https://github.com/user-attachments/assets/45f88fa1-6cd5-43e9-8b63-83f1ea3816f5" />
+
 
 ## ✨ Key Features
 - **AI-Powered Audits**: Deep-scans codebases for SQL injection, hardcoded secrets, and XSS using Llama 3.1.
