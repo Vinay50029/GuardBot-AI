@@ -1,35 +1,43 @@
-# GuardBot AI - DevSecOps Git Auditor
+# 🛡️ GuardBot AI - DevSecOps Git Auditor
 
-A full-stack application built with **Spring Boot** and **React** that uses AI to analyze GitHub repositories for security vulnerabilities.
-
-## 🚀 How to Run
-
-### 1. Backend (Spring Boot)
-1. Go to the `backend` folder.
-2. Run `./mvnw spring-boot:run` (or use your IDE like IntelliJ/Eclipse).
-3. The API will start on `http://localhost:8080`.
-
-### 2. Frontend (React)
-1. Go to the `frontend` folder.
-2. Run `npm install` and then `npm run dev`.
-3. Open `http://localhost:5173` in your browser.
+GuardBot AI is a professional-grade full-stack application designed to automate the security auditing process for Git repositories. Built with **Spring Boot** and **React**, it leverages **LLM-powered analysis** to identify critical vulnerabilities, ensuring code safety in a modern DevSecOps lifecycle.
 
 ---
 
-## 💡 Interview Talking Points (for AutoRABIT)
-
-When they ask you about this project, mention these points:
-
-1.  **DevSecOps Alignment:** "I built this because I wanted to see how AI can improve the DevSecOps lifecycle by automating security audits directly from Git repositories."
-2.  **Full-Stack Capability:** "I used **Spring Boot** for the backend because of its robustness in enterprise environments and **React** for a premium, responsive UI."
-3.  **Scalability & Metadata:** "The backend is designed to interact with Git metadata (using JGit) and process large files, which is similar to how AutoRABIT handles Salesforce metadata."
-4.  **AI Integration:** "I integrated an LLM to perform the actual vulnerability analysis, which allows the tool to detect complex patterns like SQL injection or hardcoded secrets that simple regex might miss."
-5.  **Microservices Ready:** "The architecture separates the frontend and backend, making it easy to deploy as separate microservices."
+## ✨ Key Features
+- **AI-Powered Audits**: Deep-scans codebases for SQL injection, hardcoded secrets, and XSS using Llama 3.1.
+- **Structured Reporting**: Generates executive summaries and prioritized "High-Risk" fix lists.
+- **Real-Time Integration**: Directly fetches and analyzes repository data via RESTful APIs.
+- **Premium UI**: Responsive dashboard built with React and Tailwind CSS for security analysts.
 
 ---
 
 ## 🛠️ Tech Stack
-- **Backend:** Java 17, Spring Boot 3, Maven, JGit.
-- **Frontend:** React 18, Tailwind CSS, Lucide Icons, Axios.
-- **AI:** LLM Integration (OpenAI/Gemini/Mock).
-# GuardBot-AI
+
+### Backend
+- **Java 17 / Spring Boot 3** (Core Logic)
+- **Maven** (Dependency Management)
+- **Groq AI SDK** (Security Analysis Engine)
+
+### Frontend
+- **React 18** (UI/UX)
+- **Tailwind CSS** (Styling & Design System)
+- **Lucide Icons** (Visual Language)
+- **Axios** (API Communication)
+
+---
+
+## 💡 Strategic Design Decisions (Interview Prep)
+
+When discussing this project in interviews, consider highlighting these points:
+
+1.  **DevSecOps Automation**: "GuardBot addresses the 'shift-left' security philosophy by automating audits at the repository level before deployment."
+2.  **Scalable Architecture**: "The separation of concerns between the Spring Boot backend and React frontend allows for independent scaling and modern microservice deployment."
+3.  **Beyond Regex**: "Unlike traditional static analysis tools that rely on simple regex, GuardBot uses LLMs (Llama 3.1) to understand code context and logic-based vulnerabilities."
+
+---
+
+## 🔮 Future Roadmap
+- [ ] **Full Repository Cloning**: Implement JGit integration for local deep-scanning of private repos.
+- [ ] **CI/CD Integration**: Add GitHub Actions support to trigger audits on every Push/PR.
+- [ ] **PDF Export**: Generate downloadable PDF security certificates for audited repos.
